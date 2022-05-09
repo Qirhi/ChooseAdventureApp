@@ -51,6 +51,9 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choice1Made:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gPb-ev-aau"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="fwF-55-PpX">
                                         <rect key="frame" x="0.0" y="718" width="374" height="100"/>
@@ -67,6 +70,9 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choice2Made:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bwm-hE-HZb"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -83,10 +89,7 @@
                     <connections>
                         <outlet property="choice1Button" destination="9QG-pg-Frw" id="aKS-Il-M1J"/>
                         <outlet property="choice2Button" destination="fwF-55-PpX" id="xI3-ZP-r5j"/>
-                        <outlet property="choiceMade" destination="fwF-55-PpX" id="Gh1-qP-73l"/>
                         <outlet property="storyLabel" destination="rAa-Vz-35u" id="beF-Dg-X4J"/>
-                        <outletCollection property="choiceMade" destination="fwF-55-PpX" collectionClass="NSMutableArray" id="UZj-4c-8PL"/>
-                        <outletCollection property="choiceMade" destination="9QG-pg-Frw" collectionClass="NSMutableArray" id="OSK-gy-AOQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
