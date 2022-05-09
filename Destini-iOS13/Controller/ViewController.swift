@@ -13,17 +13,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var storyLabel: UILabel!
     @IBOutlet weak var choice1Button: UIButton!
     @IBOutlet weak var choice2Button: UIButton!
-    @IBOutlet weak var choiceMade: UIButton!
+    @IBOutlet var choiceMade: [UIButton]!
     
-    let story0 = "You see a fork in the road."
-    let choice1 = "Take a left."
-    let choice2 = "Take a right."
+ 
+    let stories = [
+        Story(title: "You see a fork in the road.", choice1: "Take a left.", choice2: "Take a right."),
+        Story(title: "You see a tiger.", choice1: "Shout for help.", choice2: "Play dead."),
+        Story(title: "You find a treasure chest.", choice1: "Open it.", choice2: "Check for traps.")
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.storyLabel.text = self.story0
-        self.choice1Button.setTitle(self.choice1, for: .normal)
-        self.choice2Button.setTitle(self.choice2, for: .normal)
+        self.storyLabel.text = stories[0].title
+        self.choice1Button.setTitle(stories[0].choice1, for: .normal)
+        self.choice2Button.setTitle(stories[0].choice2, for: .normal)
     }
 
 
