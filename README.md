@@ -1,4 +1,4 @@
-#  Destini
+#  Choose Adventure App
 
 ## App 📱
 
